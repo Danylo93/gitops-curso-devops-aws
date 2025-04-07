@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Danylo93/gitops-curso-devops-aws.git
+    repoURL: https://github.com/Danylo93/gitops-curso-devops-aws
     targetRevision: HEAD
     path: .
   destination:
