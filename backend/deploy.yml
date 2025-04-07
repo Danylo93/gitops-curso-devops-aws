@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: dan1993/api-church:latest
+          imagePullPolicy: Always  
+          ports:
+            - containerPort: 30000
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: DATABASE_URL
+              value: "postgresql://church_owner:8y0QkdXvajGY@ep-autumn-moon-a4qe2dmq.us-east-1.aws.neon.tech/church?sslmode=require"
+            - name: PORT
+              value: "30000"
