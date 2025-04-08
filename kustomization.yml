@@ -9,4 +9,4 @@ resources:
 images:
 - name: dan1993/api-church
   newName: dan1993/api-church
-  newTag: c2f9e902fd175fdd539943d71a2a7e0569d897ea
+  newTag: 09b32718eaf7dc0034017830f9e64a31af1a4fc7
